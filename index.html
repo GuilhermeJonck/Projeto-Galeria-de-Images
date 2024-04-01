@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+      
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2,1fr); /* 2 columns */
+          grid-gap: 50px; /* Gap between grid items */
+          padding: 5px;
+          
+        }
+      
+        .box {
+          background-color: #f0f0f0;
+          border: 1px solid #ccc;
+          padding: 5px;
+          text-align: center;
+        }
+      </style>
+
+</head>
+<body>
+
+    <div class="grid-container">
+
+        <div class="box">
+            <img src="assets/bench.png" alt="" style="width: auto; height: 500px;">
+        </div>
+        <div class="box">
+            <img src="assets/cat.png" alt="" style="width: auto; height: 500px;">
+        </div>
+        <div class="box">
+            <img src="assets/clock.png" alt="" style="width: auto; height: 500px;">
+        </div>
+        <div class="box">
+            <img src="assets/door.png" alt="" style="width: auto; height: 500px;">
+        </div>
+
+    </div>
+    
+</body>
+</html>
