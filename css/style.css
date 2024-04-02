@@ -2,11 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
+:root {
+    /*Nome default do html*/
+    --text-color: white; /*Variável criada*/
+    --bg-url: url(../../assets/bg.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(../assets/moon-stars.svg);
+}
+  
+  .light {
+    --text-color: black;
+    --bg-url: url(../assets/bg-light.png);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(../assets/sun.svg);
+}
+#header {
+    margin: auto;
+    margin-bottom: 16px;
+    border-bottom: solid 1px var(--text-color);
+    width: 50%;
+    align-items: center;
+}
 
 body {
     margin: 0;
     padding: 0;
+    background:  var(--bg-url) top center/cover;
+    height: 100vh;
+}
+
+#container {
+    margin: 56px auto 0px;
+    padding: 0 24px;
+  }
+
+#container h1{
+    text-align: center;
+    color: var(--text-color);
 }
 header img {
     width: 33px;
@@ -63,6 +103,70 @@ footer img{
     width: 25px;
 }
 
+/*Switch*/
+#switch {
+    position: relative /*Posição relativa  ao switch no absoluto*/;
+    width: 64px;
+  
+    margin: 4px auto; /*Alinhamento de display block*/
+  }
+  #switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border-radius: 50%;
+  
+    position: absolute; /*Sobreposição de camadas*/
+    z-index: 1; /*Alterar layer do button*/
+    top: 50%; /*Alinhando*/
+    left: 0;
+    transform: translateY(-50%); /*Alinhando*/
+  
+    animation: slide-out 0.2s;
+  }
+  
+  .light #switch button {
+    animation: slide-in 0.2s forwards;
+  }
+  
+  #switch button:hover {
+    outline: 8px solid var(--highlight-color);
+  }
+  #switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+  }
+
+  #container {
+    width: 100%;
+
+  }
+  
+/* animation/Mover elemento */
+@keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  /* animation/Mover elemento */
+  @keyframes slide-out {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
 @media (max-width: 768px) {
     .grid-gallery{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
