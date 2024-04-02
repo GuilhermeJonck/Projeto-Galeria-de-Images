@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <div class="grid-gallery">
         <div class="grid-item">
-          <a href="assets/bench.png">
+          <a href="assets/bench.png" data-lightbox="gridImage">
             <img src="assets/bench.png" alt="">
           </a>
         </div>
         <div class="grid-item">
-          <a href="assets/cat.png">
+          <a href="assets/cat.png" data-lightbox="gridImage">
             <img src="assets/cat.png" alt="">
           </a>
         </div>
         <div class="grid-item">
-          <a href="assets/clock.png">
+          <a href="assets/clock.png" data-lightbox="gridImage">
             <img src="assets/clock.png" alt="">
           </a>
         </div>
         <div class="grid-item">
-          <a href="assets/engine.png">
+          <a href="assets/engine.png" data-lightbox="gridImage">
             <img src="assets/engine.png" alt="">
           </a>
         </div>
         <div class="grid-item">
-          <a href="assets/old-door.png">
+          <a href="assets/old-door.png" data-lightbox="gridImage">
             <img src="assets/old-door.png" alt="">
           </a>
         </div>
         <div class="grid-item">
-          <a href="assets/woman.png">
+          <a href="assets/woman.png" data-lightbox="gridImage">
             <img src="assets/woman.png" alt="">
           </a>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
