@@ -8,7 +8,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+header img {
+    width: 33px;
+}
 .grid-gallery {
     
     width: 100%;
@@ -49,6 +51,16 @@ body {
 
 .grid-gallery .grid-item:hover img {
     transform: scale(1.1);
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+  }  
+
+footer img{
+    width: 25px;
 }
 
 @media (max-width: 768px) {
