@@ -4,49 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Imagens</title>
-
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-      
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(2,1fr); /* 2 columns */
-          grid-gap: 50px; /* Gap between grid items */
-          padding: 5px;
-          
-        }
-      
-        .box {
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-          padding: 5px;
-          text-align: center;
-        }
-      </style>
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <div class="grid-container">
-
-        <div class="box">
-            <img src="assets/bench.png" alt="" style="width: auto; height: 500px;">
+    <div class="grid-gallery">
+        <div class="grid-item">
+          <a href="assets/bench.png">
+            <img src="assets/bench.png" alt="">
+          </a>
         </div>
-        <div class="box">
-            <img src="assets/cat.png" alt="" style="width: auto; height: 500px;">
+        <div class="grid-item">
+          <a href="assets/cat.png">
+            <img src="assets/cat.png" alt="">
+          </a>
         </div>
-        <div class="box">
-            <img src="assets/clock.png" alt="" style="width: auto; height: 500px;">
+        <div class="grid-item">
+          <a href="assets/clock.png">
+            <img src="assets/clock.png" alt="">
+          </a>
         </div>
-        <div class="box">
-            <img src="assets/door.png" alt="" style="width: auto; height: 500px;">
+        <div class="grid-item">
+          <a href="assets/engine.png">
+            <img src="assets/engine.png" alt="">
+          </a>
         </div>
-
+        <div class="grid-item">
+          <a href="assets/old-door.png">
+            <img src="assets/old-door.png" alt="">
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="assets/woman.png">
+            <img src="assets/woman.png" alt="">
+          </a>
+        </div>
     </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+    </script>
 </body>
 </html>
