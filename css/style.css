@@ -7,7 +7,7 @@
 :root {
     /*Nome default do html*/
     --text-color: white; /*Variável criada*/
-    --bg-url: url(../../assets/bg.jpg);
+    --bg-url: #121212;
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(255, 255, 255, 0.05);
@@ -16,9 +16,9 @@
 }
   
   .light {
-    --text-color: black;
-    --bg-url: url(../assets/bg-light.png);
-    --stroke-color: rgba(0, 0, 0, 0.5);
+    --text-color: #89C5CC;
+    --bg-url: #fafafa;
+    --stroke-color: #89C5CC;
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
@@ -26,10 +26,11 @@
 }
 #header {
     margin: auto;
-    margin-bottom: 16px;
+    margin: 20px auto 16px ;
     border-bottom: solid 1px var(--text-color);
     width: 50%;
     align-items: center;
+    font-family: 'Open Sans','sans-serif';
 }
 
 body {
@@ -39,17 +40,13 @@ body {
     height: 100vh;
 }
 
-#container {
-    margin: 56px auto 0px;
-    padding: 0 24px;
-  }
 
 #container h1{
     text-align: center;
     color: var(--text-color);
 }
 header img {
-    width: 33px;
+  width: 33px;
 }
 .grid-gallery {
     
@@ -114,6 +111,7 @@ footer img{
     width: 32px;
     height: 32px;
     background: white var(--switch-bg-url) no-repeat center;
+    border: 1px solid black;
     border-radius: 50%;
   
     position: absolute; /*Sobreposição de camadas*/
